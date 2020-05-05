@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Add Action"
+        android:textSize="@dimen/_18sdp"
+        android:fontFamily="@font/montserrat"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/action_taken"
+        android:layout_centerInParent="true"
+        android:hint="Enter action taken against complaint"
+        android:paddingTop="@dimen/_5sdp"
+        android:gravity="top|left"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/montserrat"
+        android:paddingLeft="@dimen/_15sdp"
+        android:background="@drawable/edittextdesign"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+
+        android:layout_height="@dimen/_80sdp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Action"
+        android:textSize="@dimen/_18sdp"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/ActionComplaint"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttondesign"
+        android:layout_height="@dimen/_40sdp"/>
+
+</LinearLayout>

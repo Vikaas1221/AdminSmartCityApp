@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/top_layout"
+        android:background="@drawable/relativelayoutdesign"
+        android:layout_height="@dimen/_220sdp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat"
+
+            android:text="District Adminstration,Karnal "
+            android:textSize="@dimen/_20sdp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bottomlayooutdesign"
+        android:layout_marginTop="@dimen/_120sdp"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/raja"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/emailId"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Email Id"
+            android:fontFamily="@font/montserrat"
+            android:layout_below="@+id/profile_image"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittextdesign"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:layout_height="@dimen/_50sdp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/password"
+            android:hint="Password"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="textPassword"
+            android:background="@drawable/edittextdesign"
+            android:drawablePadding="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_below="@+id/emailId"
+            android:drawableLeft="@drawable/ic_mode_edit_black_24dp"
+            android:layout_height="@dimen/_50sdp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Login"
+            android:layout_below="@+id/department"
+            android:textSize="@dimen/_20sdp"
+            android:gravity="center"
+            android:id="@+id/login"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat"
+            android:background="@drawable/buttondesign"
+            android:layout_height="@dimen/_40sdp"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:background="@drawable/edittextdesign"
+            android:layout_below="@+id/password"
+            android:id="@+id/department"
+            android:paddingLeft="@dimen/_10sdp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_height="@dimen/_50sdp"/>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
